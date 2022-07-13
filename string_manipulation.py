@@ -1,8 +1,6 @@
 """String manipulation tutorial"""
 
-from cgi import test
 from copy import deepcopy
-from operator import truediv
 
 
 def checker1(test_brackets):
@@ -12,11 +10,11 @@ def checker1(test_brackets):
     while True:
         result = result.replace(
             "()", "").replace("[]", "").replace("{}", "")
-        if len(result) != old_len:
+        if len(result) != old_len:  # replacement have just done.
             old_len = len(result)
-        elif len(result) == 0:
+        elif len(result) == 0:  # no more brackets, proceed to quit the loop
             return True
-        else:
+        else:  # IMBALANCE total of brackets have been found, quit the loop
             return False
 
 
