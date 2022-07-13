@@ -14,6 +14,10 @@ multiplication: Callable[[int | float, int | float], int |
 # def addition and multiplication are the ways to declare a function in python
 
 
+def division(first_number: int | float, second_number: int | float) -> int | float:
+    return first_number / second_number
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -46,6 +50,9 @@ def main():
     elif args.action == "multiplication":
         result = multiplication(args.first_number, args.second_number)
 
+    elif args.action == "/":
+        result = division(args.first_number, args.second_number)
+
     print(result)
 
 
@@ -53,3 +60,5 @@ if __name__ == "__main__":
     main()
 
 # example input =  python Intro_1.py -a multiplication -f 3 -s 5
+# links
+# https://docs.python.org/3/howto/argparse.html
