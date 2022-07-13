@@ -28,3 +28,8 @@ print("fruits: ", fruits)
 
 for index, item in enumerate(fruits2):
     print(index, item)
+
+if "apple" in fruits:
+    print("Apple is Found!")
+
+print("I have " + ", ".join(fruits2))
