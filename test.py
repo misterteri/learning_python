@@ -1,8 +1,8 @@
 """test for main.py"""
 
 import os
-from Intro_1 import addition
-from Intro_1 import multiplication
+from main import addition
+from main import multiplication
 #only import import library
 #if you want to import all library from main.py can use * instead
 # from main import * or addition, multiplication
